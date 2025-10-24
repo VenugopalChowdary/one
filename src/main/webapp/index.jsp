@@ -806,6 +806,7 @@
                     <li><a href="#"><i class="fas fa-percent"></i> Deals</a></li>
                     <li><a href="#"><i class="fas fa-info-circle"></i> About</a></li>
                     <li><a href="#"><i class="fas fa-envelope"></i> Contact</a></li>
+                    <li><a href="#"><i class="fas fa-fire"></i> Pranay</a></li>
                 </ul>
             </nav>
             
