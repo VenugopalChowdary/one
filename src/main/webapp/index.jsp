@@ -108,13 +108,14 @@
       background-size: cover;
       background-position: center;
       animation: bannerSlider 15s infinite;
+      border-radius: 6px;
     }
 
     @keyframes bannerSlider {
-      0% { background-image: url('https://via.placeholder.com/1200x350?text=Festive+Sale'); }
-      33% { background-image: url('https://via.placeholder.com/1200x350?text=Fashion+Deals'); }
-      66% { background-image: url('https://via.placeholder.com/1200x350?text=Home+Makeover'); }
-      100% { background-image: url('https://via.placeholder.com/1200x350?text=Festive+Sale'); }
+      0% { background-image: url('https://images.unsplash.com/photo-1521334884684-d80222895322?auto=format&fit=crop&w=1200&q=60'); }
+      33% { background-image: url('https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1200&q=60'); }
+      66% { background-image: url('https://images.unsplash.com/photo-1607083206173-8b4f4e6c4722?auto=format&fit=crop&w=1200&q=60'); }
+      100% { background-image: url('https://images.unsplash.com/photo-1521334884684-d80222895322?auto=format&fit=crop&w=1200&q=60'); }
     }
 
     /* SECTION STYLES */
@@ -231,12 +232,12 @@
     <h2>Men's Collection</h2>
     <div class="product-grid">
       <div class="product">
-        <img src="https://via.placeholder.com/200x200?text=T-Shirt" alt="">
+        <img src="https://images.unsplash.com/photo-1521334884684-d80222895322?auto=format&fit=crop&w=400&q=60" alt="">
         <h3>Casual T-Shirt</h3>
         <p>₹599</p>
       </div>
       <div class="product">
-        <img src="https://via.placeholder.com/200x200?text=Shoes" alt="">
+        <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=400&q=60" alt="">
         <h3>Running Shoes</h3>
         <p>₹1,299</p>
       </div>
@@ -248,12 +249,12 @@
     <h2>Women's Collection</h2>
     <div class="product-grid">
       <div class="product">
-        <img src="https://via.placeholder.com/200x200?text=Dress" alt="">
+        <img src="https://images.unsplash.com/photo-1520975918313-60c85c8f8c16?auto=format&fit=crop&w=400&q=60" alt="">
         <h3>Floral Dress</h3>
         <p>₹899</p>
       </div>
       <div class="product">
-        <img src="https://via.placeholder.com/200x200?text=Handbag" alt="">
+        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=400&q=60" alt="">
         <h3>Leather Handbag</h3>
         <p>₹1,499</p>
       </div>
@@ -265,12 +266,12 @@
     <h2>Kids Collection</h2>
     <div class="product-grid">
       <div class="product">
-        <img src="https://via.placeholder.com/200x200?text=Toy" alt="">
+        <img src="https://images.unsplash.com/photo-1517816743773-6e0fd518b4a6?auto=format&fit=crop&w=400&q=60" alt="">
         <h3>Soft Toy</h3>
         <p>₹499</p>
       </div>
       <div class="product">
-        <img src="https://via.placeholder.com/200x200?text=Kids+Shirt" alt="">
+        <img src="https://images.unsplash.com/photo-1622434641406-2c1b7b9bdf7a?auto=format&fit=crop&w=400&q=60" alt="">
         <h3>Kids Shirt</h3>
         <p>₹399</p>
       </div>
@@ -282,12 +283,12 @@
     <h2>Home & Living</h2>
     <div class="product-grid">
       <div class="product">
-        <img src="https://via.placeholder.com/200x200?text=Lamp" alt="">
+        <img src="https://images.unsplash.com/photo-1607083206173-8b4f4e6c4722?auto=format&fit=crop&w=400&q=60" alt="">
         <h3>Decor Lamp</h3>
         <p>₹999</p>
       </div>
       <div class="product">
-        <img src="https://via.placeholder.com/200x200?text=Cushion" alt="">
+        <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=400&q=60" alt="">
         <h3>Cushion Set</h3>
         <p>₹699</p>
       </div>
@@ -299,12 +300,12 @@
     <h2>Electronics</h2>
     <div class="product-grid">
       <div class="product">
-        <img src="https://via.placeholder.com/200x200?text=Headphones" alt="">
+        <img src="https://images.unsplash.com/photo-1607083206173-8b4f4e6c4722?auto=format&fit=crop&w=400&q=60" alt="">
         <h3>Bluetooth Headphones</h3>
         <p>₹1,999</p>
       </div>
       <div class="product">
-        <img src="https://via.placeholder.com/200x200?text=Smartwatch" alt="">
+        <img src="https://images.unsplash.com/photo-1606813902780-1f3dfc943a8d?auto=format&fit=crop&w=400&q=60" alt="">
         <h3>Smart Watch</h3>
         <p>₹2,499</p>
       </div>
@@ -316,12 +317,12 @@
     <h2>Today’s Hot Deals 🔥</h2>
     <div class="product-grid">
       <div class="product">
-        <img src="https://via.placeholder.com/200x200?text=Sunglasses" alt="">
+        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=400&q=60" alt="">
         <h3>Trendy Sunglasses</h3>
         <p><strike>₹999</strike> ₹499</p>
       </div>
       <div class="product">
-        <img src="https://via.placeholder.com/200x200?text=Earbuds" alt="">
+        <img src="https://images.unsplash.com/photo-1585386959984-a41552231635?auto=format&fit=crop&w=400&q=60" alt="">
         <h3>Wireless Earbuds</h3>
         <p><strike>₹2,999</strike> ₹1,299</p>
       </div>
