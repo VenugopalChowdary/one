@@ -21,98 +21,127 @@
       top: 0;
       left: 0;
       width: 100%;
-      z-index: 10;
+      z-index: 100;
     }
 
     .logo {
       font-size: 24px;
       font-weight: bold;
       color: #63e3ac;
-      letter-spacing: 1px;
     }
 
-    nav ul {
-      list-style: none;
+    .search-box {
+      flex: 1;
+      margin: 0 20px;
       display: flex;
-      gap: 25px;
+      background-color: white;
+      border-radius: 6px;
+      overflow: hidden;
     }
 
-    nav ul li a {
-      text-decoration: none;
+    .search-box input {
+      flex: 1;
+      border: none;
+      padding: 10px;
+      font-size: 15px;
+      outline: none;
+    }
+
+    .search-box button {
+      background-color: #63e3ac;
+      border: none;
+      color: #8c5e58;
+      padding: 10px 15px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .header-icons {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .header-icons a {
       color: white;
+      text-decoration: none;
       font-weight: 500;
       transition: color 0.3s;
     }
 
-    nav ul li a:hover {
+    .header-icons a:hover {
       color: #63e3ac;
     }
 
-    /* HERO SECTION */
-    .hero {
-      margin-top: 80px;
-      background: linear-gradient(135deg, #63e3ac 40%, #fff7f8);
+    /* CATEGORY BAR */
+    .category-bar {
+      margin-top: 70px;
+      background-color: white;
       display: flex;
-      align-items: center;
       justify-content: center;
-      height: 60vh;
-      text-align: center;
+      padding: 10px 0;
+      border-bottom: 1px solid #eee;
+      flex-wrap: wrap;
+      position: sticky;
+      top: 70px;
+      z-index: 50;
+    }
+
+    .category-bar a {
       color: #8c5e58;
-      flex-direction: column;
+      text-decoration: none;
+      padding: 10px 18px;
+      font-weight: 500;
+      transition: all 0.3s;
     }
 
-    .hero h1 {
-      font-size: 42px;
-      margin-bottom: 15px;
+    .category-bar a:hover {
+      color: #63e3ac;
+      border-bottom: 2px solid #63e3ac;
     }
 
-    .hero p {
-      font-size: 18px;
-      color: #6b4e49;
-      margin-bottom: 25px;
+    /* BANNER */
+    .banner {
+      margin-top: 130px;
+      width: 100%;
+      height: 350px;
+      background-size: cover;
+      background-position: center;
+      animation: bannerSlider 15s infinite;
     }
 
-    .btn {
-      background-color: #8c5e58;
-      color: white;
-      padding: 12px 28px;
-      border: none;
-      border-radius: 6px;
-      font-size: 16px;
-      cursor: pointer;
-      transition: all 0.3s ease;
-    }
-
-    .btn:hover {
-      background-color: #63e3ac;
-      color: #8c5e58;
+    @keyframes bannerSlider {
+      0% { background-image: url('https://via.placeholder.com/1200x350?text=Festive+Sale'); }
+      33% { background-image: url('https://via.placeholder.com/1200x350?text=Fashion+Deals'); }
+      66% { background-image: url('https://via.placeholder.com/1200x350?text=Home+Makeover'); }
+      100% { background-image: url('https://via.placeholder.com/1200x350?text=Festive+Sale'); }
     }
 
     /* SECTION STYLES */
     section {
-      padding: 70px 40px;
+      padding: 60px 40px;
     }
 
     h2 {
-      text-align: center;
+      text-align: left;
       color: #8c5e58;
-      margin-bottom: 35px;
-      font-size: 28px;
+      font-size: 24px;
+      margin-bottom: 20px;
     }
 
     .product-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
       gap: 25px;
     }
 
     .product {
       background-color: white;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
       padding: 15px;
       text-align: center;
-      transition: transform 0.3s ease;
+      transition: transform 0.3s;
     }
 
     .product:hover {
@@ -121,54 +150,48 @@
 
     .product img {
       width: 100%;
-      border-radius: 10px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
       margin-bottom: 10px;
     }
 
     .product h3 {
       color: #8c5e58;
-      font-size: 18px;
+      font-size: 16px;
       margin-bottom: 5px;
     }
 
     .product p {
       color: #6b4e49;
-      font-size: 15px;
+      font-size: 14px;
     }
 
     footer {
       background-color: #8c5e58;
       color: white;
       text-align: center;
-      padding: 25px 0;
-      margin-top: 30px;
+      padding: 30px 0;
+      margin-top: 40px;
     }
 
+    /* MOBILE */
     @media (max-width: 768px) {
-      nav ul {
+      header {
         flex-direction: column;
-        background: #8c5e58;
-        position: absolute;
-        top: 60px;
-        right: 0;
-        width: 200px;
-        display: none;
+        align-items: stretch;
       }
 
-      nav ul.active {
-        display: block;
+      .search-box {
+        margin: 10px 0;
       }
 
-      .menu-toggle {
-        display: block;
-        font-size: 24px;
-        cursor: pointer;
+      .category-bar {
+        position: static;
       }
-    }
 
-    @media (min-width: 769px) {
-      .menu-toggle {
-        display: none;
+      section {
+        padding: 40px 20px;
       }
     }
   </style>
@@ -178,40 +201,44 @@
   <!-- HEADER -->
   <header>
     <div class="logo">DEECHA</div>
-    <div class="menu-toggle">☰</div>
-    <nav>
-      <ul>
-        <li><a href="#men">Men</a></li>
-        <li><a href="#women">Women</a></li>
-        <li><a href="#kids">Kids</a></li>
-        <li><a href="#home">Home & Living</a></li>
-        <li><a href="#deals">Deals</a></li>
-      </ul>
-    </nav>
+
+    <div class="search-box">
+      <input type="text" placeholder="Search for products, brands and more..." />
+      <button>🔍</button>
+    </div>
+
+    <div class="header-icons">
+      <a href="#">Login</a>
+      <a href="#">Cart 🛒</a>
+    </div>
   </header>
 
-  <!-- HERO -->
-  <div class="hero">
-    <h1>Welcome to DEECHA</h1>
-    <p>Fashion & Lifestyle for Everyone</p>
-    <button class="btn" onclick="document.getElementById('deals').scrollIntoView({behavior:'smooth'})">
-      Explore Deals
-    </button>
+  <!-- CATEGORY BAR -->
+  <div class="category-bar">
+    <a href="#men">Men</a>
+    <a href="#women">Women</a>
+    <a href="#kids">Kids</a>
+    <a href="#home">Home & Living</a>
+    <a href="#electronics">Electronics</a>
+    <a href="#deals">Deals</a>
   </div>
+
+  <!-- BANNER -->
+  <div class="banner"></div>
 
   <!-- MEN SECTION -->
   <section id="men">
     <h2>Men's Collection</h2>
     <div class="product-grid">
       <div class="product">
-        <img src="https://via.placeholder.com/250x250?text=Men+T-Shirt" alt="T-Shirt">
+        <img src="https://via.placeholder.com/200x200?text=T-Shirt" alt="">
         <h3>Casual T-Shirt</h3>
         <p>₹599</p>
       </div>
       <div class="product">
-        <img src="https://via.placeholder.com/250x250?text=Men+Shoes" alt="Shoes">
+        <img src="https://via.placeholder.com/200x200?text=Shoes" alt="">
         <h3>Running Shoes</h3>
-        <p>₹1,499</p>
+        <p>₹1,299</p>
       </div>
     </div>
   </section>
@@ -221,14 +248,14 @@
     <h2>Women's Collection</h2>
     <div class="product-grid">
       <div class="product">
-        <img src="https://via.placeholder.com/250x250?text=Dress" alt="Dress">
+        <img src="https://via.placeholder.com/200x200?text=Dress" alt="">
         <h3>Floral Dress</h3>
         <p>₹899</p>
       </div>
       <div class="product">
-        <img src="https://via.placeholder.com/250x250?text=Handbag" alt="Handbag">
+        <img src="https://via.placeholder.com/200x200?text=Handbag" alt="">
         <h3>Leather Handbag</h3>
-        <p>₹1,299</p>
+        <p>₹1,499</p>
       </div>
     </div>
   </section>
@@ -238,13 +265,13 @@
     <h2>Kids Collection</h2>
     <div class="product-grid">
       <div class="product">
-        <img src="https://via.placeholder.com/250x250?text=Kids+Shirt" alt="Shirt">
-        <h3>Kids Shirt</h3>
+        <img src="https://via.placeholder.com/200x200?text=Toy" alt="">
+        <h3>Soft Toy</h3>
         <p>₹499</p>
       </div>
       <div class="product">
-        <img src="https://via.placeholder.com/250x250?text=Toy" alt="Toy">
-        <h3>Soft Toy</h3>
+        <img src="https://via.placeholder.com/200x200?text=Kids+Shirt" alt="">
+        <h3>Kids Shirt</h3>
         <p>₹399</p>
       </div>
     </div>
@@ -255,14 +282,31 @@
     <h2>Home & Living</h2>
     <div class="product-grid">
       <div class="product">
-        <img src="https://via.placeholder.com/250x250?text=Cushion" alt="Cushion">
+        <img src="https://via.placeholder.com/200x200?text=Lamp" alt="">
+        <h3>Decor Lamp</h3>
+        <p>₹999</p>
+      </div>
+      <div class="product">
+        <img src="https://via.placeholder.com/200x200?text=Cushion" alt="">
         <h3>Cushion Set</h3>
         <p>₹699</p>
       </div>
+    </div>
+  </section>
+
+  <!-- ELECTRONICS SECTION -->
+  <section id="electronics">
+    <h2>Electronics</h2>
+    <div class="product-grid">
       <div class="product">
-        <img src="https://via.placeholder.com/250x250?text=Lamp" alt="Lamp">
-        <h3>Decorative Lamp</h3>
-        <p>₹999</p>
+        <img src="https://via.placeholder.com/200x200?text=Headphones" alt="">
+        <h3>Bluetooth Headphones</h3>
+        <p>₹1,999</p>
+      </div>
+      <div class="product">
+        <img src="https://via.placeholder.com/200x200?text=Smartwatch" alt="">
+        <h3>Smart Watch</h3>
+        <p>₹2,499</p>
       </div>
     </div>
   </section>
@@ -272,12 +316,12 @@
     <h2>Today’s Hot Deals 🔥</h2>
     <div class="product-grid">
       <div class="product">
-        <img src="https://via.placeholder.com/250x250?text=Deal+1" alt="Deal">
+        <img src="https://via.placeholder.com/200x200?text=Sunglasses" alt="">
         <h3>Trendy Sunglasses</h3>
         <p><strike>₹999</strike> ₹499</p>
       </div>
       <div class="product">
-        <img src="https://via.placeholder.com/250x250?text=Deal+2" alt="Deal">
+        <img src="https://via.placeholder.com/200x200?text=Earbuds" alt="">
         <h3>Wireless Earbuds</h3>
         <p><strike>₹2,999</strike> ₹1,299</p>
       </div>
@@ -288,14 +332,5 @@
   <footer>
     <p>© 2025 DEECHA – All Rights Reserved</p>
   </footer>
-
-  <script>
-    // Toggle menu for mobile
-    const menuToggle = document.querySelector('.menu-toggle');
-    const navLinks = document.querySelector('nav ul');
-    menuToggle.addEventListener('click', () => {
-      navLinks.classList.toggle('active');
-    });
-  </script>
 </body>
 </html>
