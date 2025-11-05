@@ -78,7 +78,7 @@
             <div class="product-grid">
                 <!-- Product Card 1 -->
                 <div class="product-card">
-                    <img src="https://via.placeholder.com/300x400.png?text=Men's+Shirt" alt="Men's Shirt">
+                    <img src="images/product-polo.jpg" alt="Men's Polo Shirt">
                     <div class="product-info">
                         <h3 class="product-title">Men's Classic Polo T-Shirt</h3>
                         <p class="product-price">₹599 <span class="original-price">₹999</span></p>
@@ -87,7 +87,7 @@
                 </div>
                 <!-- Product Card 2 -->
                 <div class="product-card">
-                    <img src="https://via.placeholder.com/300x400.png?text=Women's+Kurta" alt="Women's Kurta">
+                    <img src="images/product-kurta.jpg" alt="Women's Kurta">
                     <div class="product-info">
                         <h3 class="product-title">Women's Floral Print Kurta</h3>
                         <p class="product-price">₹899 <span class="original-price">₹1499</span></p>
@@ -96,7 +96,7 @@
                 </div>
                 <!-- Product Card 3 -->
                 <div class="product-card">
-                    <img src="https://via.placeholder.com/300x400.png?text=Kid's+T-shirt" alt="Kid's T-shirt">
+                    <img src="images/product-kidstee.jpg" alt="Kid's T-shirt">
                     <div class="product-info">
                         <h3 class="product-title">Kids Graphic Print T-Shirt</h3>
                         <p class="product-price">₹399 <span class="original-price">₹599</span></p>
@@ -105,7 +105,7 @@
                 </div>
                 <!-- Product Card 4 -->
                 <div class="product-card">
-                    <img src="https://via.placeholder.com/300x400.png?text=Men's+Jeans" alt="Men's Jeans">
+                    <img src="images/product-jeans.jpg" alt="Men's Jeans">
                     <div class="product-info">
                         <h3 class="product-title">Men's Slim Fit Denim Jeans</h3>
                         <p class="product-price">₹1299 <span class="original-price">₹2299</span></p>
