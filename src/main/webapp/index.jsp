@@ -78,7 +78,7 @@
             <div class="product-grid">
                 <!-- Product Card 1 -->
                 <div class="product-card">
-                    <img src="images/product-polo.jpg" alt="Men's Polo Shirt">
+                    <img src="https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?w=300&h=400&fit=crop" alt="Men's Polo Shirt">
                     <div class="product-info">
                         <h3 class="product-title">Men's Classic Polo T-Shirt</h3>
                         <p class="product-price">₹599 <span class="original-price">₹999</span></p>
@@ -87,7 +87,7 @@
                 </div>
                 <!-- Product Card 2 -->
                 <div class="product-card">
-                    <img src="images/product-kurta.jpg" alt="Women's Kurta">
+                    <img src="https://images.unsplash.com/photo-1589810635657-232948472d98?w=300&h=400&fit=crop" alt="Women's Kurta">
                     <div class="product-info">
                         <h3 class="product-title">Women's Floral Print Kurta</h3>
                         <p class="product-price">₹899 <span class="original-price">₹1499</span></p>
@@ -96,7 +96,7 @@
                 </div>
                 <!-- Product Card 3 -->
                 <div class="product-card">
-                    <img src="images/product-kidstee.jpg" alt="Kid's T-shirt">
+                    <img src="https://images.unsplash.com/photo-1519238263530-99c1fc5c7b59?w=300&h=400&fit=crop" alt="Kid's T-shirt">
                     <div class="product-info">
                         <h3 class="product-title">Kids Graphic Print T-Shirt</h3>
                         <p class="product-price">₹399 <span class="original-price">₹599</span></p>
@@ -105,7 +105,7 @@
                 </div>
                 <!-- Product Card 4 -->
                 <div class="product-card">
-                    <img src="images/product-jeans.jpg" alt="Men's Jeans">
+                    <img src="https://images.unsplash.com/photo-1542272604-787c3835535d?w=300&h=400&fit=crop" alt="Men's Jeans">
                     <div class="product-info">
                         <h3 class="product-title">Men's Slim Fit Denim Jeans</h3>
                         <p class="product-price">₹1299 <span class="original-price">₹2299</span></p>
@@ -134,43 +134,3 @@
                     <li><a href="#">Women</a></li>
                     <li><a href="#">Kids</a></li>
                     <li><a href="#">New Arrivals</a></li>
-                </ul>
-            </div>
-            <div class="footer-column">
-                <h4>Help</h4>
-                <ul>
-                    <li><a href="#">Contact Us</a></li>
-                    <li><a href="#">FAQs</a></li>
-                    <li><a href="#">Shipping</a></li>
-                    <li><a href="#">Returns & Refunds</a></li>
-                </ul>
-            </div>
-            <div class="footer-column">
-                <h4>About</h4>
-                <ul>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Careers</a></li>
-                    <li><a href="#">Store Locator</a></li>
-                </ul>
-            </div>
-            <div class="footer-column">
-                <h4>Connect With Us</h4>
-                <div class="social-icons">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                </div>
-                <h4>Subscribe to our newsletter</h4>
-                <form class="newsletter-form">
-                    <input type="email" placeholder="Enter your email">
-                    <button type="submit">SUBSCRIBE</button>
-                </form>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2024 Chowdary Cloths Store. All Rights Reserved.</p>
-        </div>
-    </footer>
-
-</body>
-</html>
